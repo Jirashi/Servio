@@ -15,5 +15,5 @@ For example 1 Foot to Inches:
 x = 1, y = 0.3048 (1 foot = 0.3048 meters, for length meter is the base unit), z = 0.0254 (1 inch = 0.0254 meters)
 `(1 / 0.0254) *  0.3048 = 12`
 
-### Use Servio here: [Servio](jirashi.github.io/Servio)
+### Use Servio here: [Servio](https://jirashi.github.io/Servio/)
 *Some results are approximate
