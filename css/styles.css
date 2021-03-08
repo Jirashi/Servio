@@ -1,0 +1,144 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    box-shadow: rgba(99, 99, 99, 0) 0px 2px 8px 0px;
+    transition: 0.4s ease;
+}
+
+select:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+header h1 {
+    background-color: #ff7805;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+
+}
+
+.converter {
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 490px;
+}
+
+#measurements {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 0 0 10px 0;
+    width: 490px;
+    height: 30px;
+}
+
+.values {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.values span {
+    font-size: 18px;
+    align-self: center;
+    margin: 0 15px;
+}
+
+.value {
+    width: min-content;
+}
+
+
+.unit {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px 5px 0 0;
+    font-size: 26px;
+    padding: 10px;
+    margin: 0;
+    height: 30px;
+    width: 200px;
+    overflow: hidden;
+    resize: none;
+}
+
+.units {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+    margin: 0;
+    width: 222px;
+    height: 30px;
+    
+}
+
+.formula {
+    margin: 15px 0 0 0;
+}
+
+#formula-tag {
+    background-color: #ff7805;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#formula {
+    margin: 0 10px;
+}
+
+.results {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    margin: 10px auto;
+    width: 525px;
+}
+
+.results h1 {
+    background-color: #ff7805;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+
+    padding: 5px;
+    width: 515px;
+}
+
+.result {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0) 0px 2px 8px 0px;
+    transition: 0.4s ease;
+}
+
+.result:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.result i {
+    font-size: 14px;
+    margin: 0 5px;
+}

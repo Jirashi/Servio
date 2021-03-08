@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servio | Smart Converter</title>
+        <link rel="icon" href="./Servio.png">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="initialize()">
+        <header>
+            <h1><i class="fa fa-refresh"></i> SERVIO</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="converter">
+                    <select id="measurements">
+                    </select>
+                    <div class="values">
+                        <div class="value">
+                            <textarea rows="1" class="unit" id="unit1"></textarea>
+                            <select class="units" id="units1"></select>
+                        </div>
+                        <span><i class="fa fa-refresh"></i></span>
+                        <div class="value">
+                            <textarea rows="1" class="unit" id="unit2"></textarea>
+                            <select class="units" id="units2"></select>
+                        </div>
+                    </div>
+                    <p class="formula"><span id="formula-tag">Formula</span><span id="formula"></span></p>
+                </div>
+                <div class="results" id="results">
+                    <h1>Recent Conversions</h1>
+                </div>
+            </div>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
