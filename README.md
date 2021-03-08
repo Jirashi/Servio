@@ -1,12 +1,12 @@
 # Servio - Smart Converter
 
-## What is Servio?
+## 🔁 What is Servio?
 Servio is an All-in-One unit converter. Using Servio's smart formula, you can convert **200+** units in **16** measurements. 
 
-## What makes Servio different?
+## 🤔 What makes Servio different?
 Instead of writing every formula manually for every unit, I made a single formula to do all the work for me. This way I could add units faster and make the code simpler. The only disadvantage is you lose some accuracy when converting one unit to another *and then* converting it to the desired unit*.
 
-### The Formula
+### 🧠 The Formula
 ```
 (x / z) * y
 ```
