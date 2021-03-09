@@ -16,4 +16,5 @@ x = 1, y = 0.3048 (1 foot = 0.3048 meters, for length meter is the base unit), z
 `(1 / 0.0254) *  0.3048 = 12`
 
 ### Use Servio here: [Servio](https://jirashi.github.io/Servio/)
+> You can use search params by searching `https://jirashi.github.io/Servio/convert/?amount=(value)&from=(unit1)&to=(unit2)`
 *Some results are approximate
