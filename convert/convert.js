@@ -25,7 +25,7 @@ async function convertFromParams() {
 }
 
 function convert(unit, value, convert) {
-    value = parseInt(value);
+    value = parseFloat(value);
     if (value && unit && convert) {
         let measurement = "";
         for (let m in measurements) {

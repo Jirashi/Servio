@@ -201,7 +201,6 @@
     "mass":{
         "formula":"smart",
         "units":{
-            
             "metric ton":1e+6,
             "megagram":1000000,
             "metric quintal":100000,
@@ -271,13 +270,13 @@
             "pascal":1,
             "millipascal":0.001,
 
-            "PSI":6894.76,
-            "Standard atmosphere":101325,
-            "Technical atmosphere":98066.5,
-            "cmH20":98.0665,
-            "mmH20":9.80665,
-            "mmHg":133.322,
-            "Torr":133.322,
+            "psi":6894.76,
+            "standard atmosphere":101325,
+            "technical atmosphere":98066.5,
+            "h20 cm":98.0665,
+            "h20 mm":9.80665,
+            "hg mm":133.322,
+            "torr":133.322,
 
             "martian atmosphere":610
         }
@@ -297,8 +296,8 @@
     "temperature":{
         "formula":"custom",
         "units":{
-            "farenheight":["(x - 32) * 5/9", "(x * 9/5) + 32"],
-            "celcius":["x * 1", "x * 1"],
+            "fahrenheit":["(x - 32) * 5/9", "(x * 9/5) + 32"],
+            "celsius":["x * 1", "x * 1"],
             "kelvin":["x - 273.15", "x + 273.15"],
 
             "rankine":["(x - 491.67) * 5/9", "(x + 273.15) * 9/5"],

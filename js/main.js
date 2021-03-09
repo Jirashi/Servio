@@ -8,7 +8,7 @@ let units2 = document.getElementById('units2');
 
 // Functions
 function convert(unit, value, convert) {
-    value = parseInt(value);
+    value = parseFloat(value);
     if (value && unit && convert) {
         let measurement = measurements[currentMeasurement.toLowerCase()];
         let formula = measurement["formula"];
