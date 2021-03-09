@@ -9,6 +9,15 @@
     <body onload="initialize()">
         <header>
             <h1><i class="fa fa-refresh"></i> SERVIO</h1>
+            <div class="search">
+                <textarea id="search-from" placeholder="Convert"></textarea>
+                <i class="fa fa-exchange"></i>
+                <textarea id="search-to" placeholder="To"></textarea>
+                <button onclick="search()"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="settings">
+                <i class="fa fa-sun-o" id="theme" title="Change Theme"></i>
+            </div>
         </header>
         <main>
             <div class="container">
@@ -20,7 +29,7 @@
                             <textarea rows="1" class="unit" id="unit1"></textarea>
                             <select class="units" id="units1"></select>
                         </div>
-                        <span><i class="fa fa-refresh"></i></span>
+                        <span id="convert-symbol"><i class="fa fa-exchange"></i></span>
                         <div class="value">
                             <textarea rows="1" class="unit" id="unit2"></textarea>
                             <select class="units" id="units2"></select>

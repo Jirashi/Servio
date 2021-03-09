@@ -5,6 +5,10 @@
     outline: none;
 }
 
+body {
+    transition: 1s ease;
+}
+
 select::-ms-expand {
     display: none;
 }
@@ -23,13 +27,78 @@ select:hover {
     cursor: pointer;
 }
 
-header h1 {
+header {
     background-color: #ff7805;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+header .settings {
+    margin-left: auto;
+    order: 2;
+}
+
+header .settings i {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+header .search i.fa-exchange {
+    margin: 10px;
+}
+
+header .search textarea {
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    font-size: 20px;
+    height: 23px;
+    width: 175px;
+    resize: none;
+    padding: 7px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+header .search textarea:focus {
+    color: #000000;
+}
+
+textarea#search-to {
+    border-radius: 8px 0 0 8px;
+    border-right: 0;
+}
+
+header .search button {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 0 8px 8px 0;
+    height: 39px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+header .search button:hover {
+    background-color: #eeeeee;
+
+}
+
+header h1 {
     text-align: center;
     font-size: 22px;
     padding: 10px;
-
 }
 
 .converter {
@@ -63,7 +132,6 @@ header h1 {
     width: min-content;
 }
 
-
 .unit {
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -86,6 +154,10 @@ header h1 {
     width: 222px;
     height: 30px;
     
+}
+
+#convert-symbol {
+    cursor: pointer;
 }
 
 .formula {
@@ -117,7 +189,6 @@ header h1 {
     color: white;
     border-radius: 15px 15px 0 0;
     text-align: center;
-
     padding: 5px;
     width: 515px;
 }
@@ -141,4 +212,81 @@ header h1 {
 .result i {
     font-size: 14px;
     margin: 0 5px;
+}
+
+body.dark {
+    color: #eeeeee;
+    background-color: #222222;
+}
+
+body.dark header {
+    color: #222222;
+}
+
+body.dark .converter {
+    background-color: #1f1f1f;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark #measurements,
+body.dark .units {
+    color: #eeeeee;
+    background-color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark .unit {
+    color: #eeeeee;
+    background-color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark .results {
+    background-color: #1f1f1f;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark .results h1,
+body.dark #formula-tag {
+    color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark .result {
+    background-color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark header .search textarea {
+    color: #3a3a3a;
+    background-color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark header .search textarea:focus {
+    color: #eeeeee;
+}
+
+body.dark header .search button {
+    color: #eeeeee;
+    background-color: #222222;
+    border: 1px solid #1b1b1b;
+}
+
+body.dark header .search button:hover {
+    background-color: #1f1f1f;
+}
+
+@media only screen and (max-width: 535px) {
+    .converter, #measurements { width: 400px; }
+
+    .unit { width: 155px; }
+    .units { width: 177px; }
+
+    #formula, .result { font-size: 12px; }
+
+    .results { width: 435px; }
+    .results h1 { width: 425px; }
+
+    header .search { display: none; }
 }

@@ -173,12 +173,15 @@
         "units":{
             "megameter":1000000,
             "kilometer":1000,
+            "hectometer":100,
             "decameter":10,
             "meter":1,
+            "decimeter":0.1,
             "centimeter":0.01,
             "millimeter":0.001,
             "micrometer":1e-6,
             "nanometer":1e-9,
+            "picometer":1e-12,
 
             "mile":1609,
             "yard":0.9144,
@@ -187,24 +190,49 @@
 
             "nautical mile":1852.001,
             "chains":20.1168,
+            "rod":5.02921,
+            "link":0.201168,
             "parsec":30856780000000000,
             "lightyear":9460730000000000,
+            "astronomical unit":149597900000,
             "angstrom":0.0000000001
         }
     },
     "mass":{
         "formula":"smart",
         "units":{
+            
             "metric ton":1e+6,
+            "megagram":1000000,
+            "metric quintal":100000,
             "kilogram":1000,
+            "hectogram":100,
+            "dekagram":10,
             "gram":1,
+            "decigram":0.1,
+            "centigram":0.01,
             "milligram":0.001,
             "microgram":1e-6,
+            "picogram":1e-12,
+            "femtogram":0.1e-15,
 
+            "long ton":1016050,
+            "short ton":907185,
+            "ton":907185,
             "imperial ton":1.016e+6,
             "us ton":907185,
+            "us quintal":45359.24,
             "pound":453.592,
             "ounce":28.3495,
+
+            "hundredweight":45359.24,
+            "french quintal":148950,
+            "troy ounce":31.10348,
+            "tola":11.6638,
+            "dram":1.771845,
+            "carat":0.2,
+            "grain":0.06479891,
+            "atomic mass unit":0.000000000000000000000001660539,
 
             "slug":14593.9,
             "stone":6350.29,
